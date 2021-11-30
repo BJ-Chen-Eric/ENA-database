@@ -1,0 +1,7 @@
+#enatool download and extract
+  wget https://github.com/enasequence/enaBrowserTools/archive/refs/tags/v0.0.3.zip
+#add command to base
+alias enaGroupGet=~/Analysis/gse/ENA/v0.0.3/enaBrowserTools-0.0.3/python3/enaDataGet
+
+# batch download the data
+enaGroupGet -g read -f fastq {acssion}
